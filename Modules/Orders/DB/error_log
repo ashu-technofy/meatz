@@ -1,0 +1,32 @@
+[10-Oct-2021 10:00:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_cart_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_cart_table.php on line 7
+[10-Oct-2021 10:00:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_cart_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_cart_table.php on line 7
+[10-Oct-2021 10:00:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_orders_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_orders_table.php on line 7
+[10-Oct-2021 10:00:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_orders_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_orders_table.php on line 7
+[10-Oct-2021 10:00:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_order_items_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_order_items_table.php on line 7
+[10-Oct-2021 10:00:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_order_items_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_order_items_table.php on line 7
+[10-Oct-2021 10:00:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_guests_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_guests_table.php on line 7
+[10-Oct-2021 10:00:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_guests_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Orders/DB/2_0_0_0_create_guests_table.php on line 7

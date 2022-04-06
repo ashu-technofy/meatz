@@ -1,0 +1,208 @@
+[07-Mar-2022 07:24:46 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:24:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:24 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:32:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:46:34 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 07:46:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:01:40 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:01:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:01:41 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:01:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:01:41 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:01:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:39 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:41 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:41 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:42 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:44 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:44 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:46 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:16:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:17:02 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:17:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/public/../vendor/autoload.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php:34
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once()
+#1 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php on line 34
+[07-Mar-2022 08:18:14 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php on line 71
+[07-Mar-2022 08:18:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php:71
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php(61): composerRequireadb46a76a9e7ab4e1d51f5ab0200a4d8()
+#1 /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/autoload.php(7): ComposerAutoloaderInitadb46a76a9e7ab4e1d51f5ab0200a4d8::getLoader()
+#2 /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php(34): require('/home/u87806418...')
+#3 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once('/home/u87806418...')
+#4 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php on line 71
+[07-Mar-2022 08:18:23 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php on line 71
+[07-Mar-2022 08:18:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php:71
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php(61): composerRequireadb46a76a9e7ab4e1d51f5ab0200a4d8()
+#1 /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/autoload.php(7): ComposerAutoloaderInitadb46a76a9e7ab4e1d51f5ab0200a4d8::getLoader()
+#2 /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php(34): require('/home/u87806418...')
+#3 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once('/home/u87806418...')
+#4 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php on line 71
+[07-Mar-2022 08:18:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php on line 71
+[07-Mar-2022 08:18:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php:71
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php(61): composerRequireadb46a76a9e7ab4e1d51f5ab0200a4d8()
+#1 /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/autoload.php(7): ComposerAutoloaderInitadb46a76a9e7ab4e1d51f5ab0200a4d8::getLoader()
+#2 /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php(34): require('/home/u87806418...')
+#3 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once('/home/u87806418...')
+#4 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php on line 71
+[07-Mar-2022 08:18:25 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php on line 71
+[07-Mar-2022 08:18:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php:71
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php(61): composerRequireadb46a76a9e7ab4e1d51f5ab0200a4d8()
+#1 /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/autoload.php(7): ComposerAutoloaderInitadb46a76a9e7ab4e1d51f5ab0200a4d8::getLoader()
+#2 /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php(34): require('/home/u87806418...')
+#3 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once('/home/u87806418...')
+#4 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php on line 71
+[07-Mar-2022 08:19:12 UTC] PHP Warning:  require(/home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/../symfony/polyfill-php80/bootstrap.php): Failed to open stream: No such file or directory in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php on line 71
+[07-Mar-2022 08:19:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/../symfony/polyfill-php80/bootstrap.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php:71
+Stack trace:
+#0 /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php(61): composerRequireadb46a76a9e7ab4e1d51f5ab0200a4d8()
+#1 /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/autoload.php(7): ComposerAutoloaderInitadb46a76a9e7ab4e1d51f5ab0200a4d8::getLoader()
+#2 /home/u878064185/domains/testingjunction.tech/public_html/meatz/public/index.php(34): require('/home/u87806418...')
+#3 /home/u878064185/domains/testingjunction.tech/public_html/meatz/server.php(21): require_once('/home/u87806418...')
+#4 {main}
+  thrown in /home/u878064185/domains/testingjunction.tech/public_html/meatz/vendor/composer/autoload_real.php on line 71
+[07-Mar-2022 10:05:43 UTC] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer.phar/src/Composer/DependencyResolver/RuleSetGenerator.php on line 129

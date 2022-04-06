@@ -1,0 +1,8 @@
+[10-Oct-2021 09:59:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Addresses/DB/2_0_0_0_create_addresses_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Addresses/DB/2_0_0_0_create_addresses_table.php on line 7
+[10-Oct-2021 09:59:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Addresses/DB/2_0_0_0_create_addresses_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Addresses/DB/2_0_0_0_create_addresses_table.php on line 7

@@ -1,0 +1,95 @@
+.main-sidebar,
+.sidebar-footer {
+  right: unset;
+  left: 0px;
+}
+.sidebar-menu li > a > .pull-left-container {
+  left: unset;
+  right: 10px;
+  top: 20px;
+}
+.content-wrapper,
+.main-header .navbar {
+  margin-right: 0px !important;
+  margin-left: 230px;
+}
+.sidebar-collapse .content-wrapper,
+.sidebar-collapse .main-header .navbar {
+  margin-left: 50px;
+}
+.main-header .logo {
+  float: left;
+}
+.dropdown-menu {
+  left: unset !important;
+  right: 0px !important;
+}
+.control-sidebar-open .control-sidebar,
+.control-sidebar-open .control-sidebar-bg,
+.control-sidebar.control-sidebar-open,
+.control-sidebar.control-sidebar-open + .control-sidebar-bg {
+  left: unset;
+  right: 0px;
+}
+#search_form i {
+  margin-left: -25px;
+}
+.card-title {
+  text-align: left;
+}
+.content-header > .breadcrumb,
+.content-header > .container > .breadcrumb {
+  left: unset;
+  right: 20px;
+}
+.content-header > .breadcrumb li,
+.content-header > .container > .breadcrumb li {
+  float: right !important;
+}
+.content-header > h1,
+.content-header > .container > h1 {
+  float: left;
+}
+.content-header > .breadcrumb > li + li:before,
+.content-header > .container > .breadcrumb > li + li:before {
+  content: "";
+}
+.content-header > .breadcrumb > li + li:after,
+.content-header > .container > .breadcrumb > li + li:after {
+  content: " <";
+  padding-left: 10px;
+}
+.content-header {
+  padding-bottom: 50px;
+}
+.card-header .mlink {
+  float: right;
+}
+.sidebar-menu.tree .side-title {
+  padding-left: 5px;
+}
+.main-header .navbar .nav > li > a > .label {
+  right: 0px;
+}
+.navbar-nav {
+  padding-right: unset;
+}
+.sorting::after,
+.sorting_asc::after {
+  content: "";
+  display: none;
+}
+.dt-buttons {
+  float: right !important;
+}
+.box-header > .box-tools {
+  left: unset;
+  right: 10px;
+}
+.box.collapsed {
+  height: 50px;
+  overflow: hidden;
+}
+.box.hidden {
+  display: none;
+}

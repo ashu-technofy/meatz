@@ -1,0 +1,16 @@
+[10-Oct-2021 10:01:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Subscribe/DB/2_0_0_0_create_subscribe_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Subscribe/DB/2_0_0_0_create_subscribe_table.php on line 7
+[10-Oct-2021 10:01:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Subscribe/DB/2_0_0_0_create_subscribe_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Subscribe/DB/2_0_0_0_create_subscribe_table.php on line 7
+[10-Oct-2021 10:01:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Subscribe/DB/2_0_0_0_create_subscribe_messages_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Subscribe/DB/2_0_0_0_create_subscribe_messages_table.php on line 7
+[10-Oct-2021 10:01:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Subscribe/DB/2_0_0_0_create_subscribe_messages_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Subscribe/DB/2_0_0_0_create_subscribe_messages_table.php on line 7

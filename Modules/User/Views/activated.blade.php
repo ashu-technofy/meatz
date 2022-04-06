@@ -1,0 +1,1 @@
+<h1>Your account activated successfully , now you can login from mobile app</h1>

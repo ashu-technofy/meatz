@@ -1,0 +1,64 @@
+[10-Oct-2021 10:00:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_dayoff_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_dayoff_table.php on line 7
+[10-Oct-2021 10:00:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_dayoff_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_dayoff_table.php on line 7
+[10-Oct-2021 10:00:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_categories_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_categories_table.php on line 7
+[10-Oct-2021 10:00:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_categories_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_categories_table.php on line 7
+[10-Oct-2021 10:00:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_areas_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_areas_table.php on line 7
+[10-Oct-2021 10:00:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_areas_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_areas_table.php on line 7
+[10-Oct-2021 10:01:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_options_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_options_table.php on line 7
+[10-Oct-2021 10:01:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_options_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_options_table.php on line 7
+[10-Oct-2021 10:01:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_products_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_products_table.php on line 7
+[10-Oct-2021 10:01:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_products_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_products_table.php on line 7
+[10-Oct-2021 10:01:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_services_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_services_table.php on line 7
+[10-Oct-2021 10:01:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_services_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_services_table.php on line 7
+[10-Oct-2021 10:01:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_product_options_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_product_options_table.php on line 7
+[10-Oct-2021 10:01:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_product_options_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_store_product_options_table.php on line 7
+[10-Oct-2021 10:01:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_stores_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_stores_table.php on line 7
+[10-Oct-2021 10:01:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_stores_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/meatzapp/public_html/Modules/Stores/DB/2_0_0_0_create_stores_table.php on line 7
