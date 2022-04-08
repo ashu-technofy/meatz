@@ -105,16 +105,22 @@ class Store extends HelperModel implements AuthenticatableContract
         return $this->belongsToMany(StoreCategory::class , 'store_categories' , 'store_id' , 'category_id');
     }
 
+    public function subcategories()
+    {
+        return $this->belongsToMany(StoreSubcategory::class, 'store_subcategories' , 'store_id' , 'subcategory_id');
+    }
+
     public function insertSubCategory($subCategoryId, $categoryIds, $storeId, $action="insert")
     {
+       
       if (!empty($subCategoryId) && !empty($categoryIds) && !empty($storeId)) {
         if ($action == "update") {
           DB::table('store_subcategories')->where('store_id',$storeId)->delete();
         }
         foreach ($categoryIds as $categoryId) {
           $subcatId = [];
-          $subCategoriesDetail = DB::table('categories')->where('parent_id' , $categoryId)->get();
-
+          $subCategoriesDetail = DB::table('subcategories')->where('category_id',$categoryId)->get();
+          
           if (!empty($subCategoriesDetail)) {
             foreach ($subCategoriesDetail as $subCategory) {
               $subcatId[] = $subCategory->id;
@@ -138,8 +144,18 @@ class Store extends HelperModel implements AuthenticatableContract
         foreach($cats as $cat){
             $strs[] = $cat->name->{app()->getLocale()};
         }
-        return implode(" , " , $strs);
+        return implode(',',$strs);
     }
+
+    public function getMysubcategoriesAttribute(){
+        $cats = $this->subcategories;
+        $strs = [];
+        foreach($cats as $cat){
+            $strs[] = $cat->subcategory_title;
+        }
+        return implode(',',$strs);
+    }
+   
 
     public function options()
     {

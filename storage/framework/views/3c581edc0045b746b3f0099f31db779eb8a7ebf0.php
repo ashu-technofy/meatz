@@ -52,7 +52,7 @@
                             ?>
                             <?php if(in_array($key , ['image' , 'path'])): ?>
                             <td class="visible"><img src="<?php echo e($value); ?>" /></td>
-                            <?php elseif(strpos($key , '_') !== false && $row->{$relation[0]}): ?>
+                            
                             <?php if(is_object($row->{$relation[0]}) && $relation[1] == 'count'): ?>
                             <td class="visible"><?php echo e($row->{$relation[0]}->count()); ?></td>
                             <?php else: ?>

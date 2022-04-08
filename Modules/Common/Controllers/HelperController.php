@@ -37,6 +37,7 @@ class HelperController extends Controller
             $this->rows = $this->rows->forStore();
         }
         $queries = request()->query();
+
         $fillables = $this->model->getFillable();
         foreach (request()->query() as $key => $value) {
 
@@ -67,20 +68,37 @@ class HelperController extends Controller
             });
         }
         $this->rows = $this->rows->latest()->paginate(25);
+
         session()->put('current_title', $this->title);
-         //echo "<pre>" ; print_r($this); die;
         return view('Common::admin.list', get_object_vars($this));
     }
 
-    protected function create()
+    public function create()
     {
-      //echo "hello"; die;
+        
+        if($this->name == 'subcategories'){
+           if(count($this->inputs)){
+            foreach($this->inputs as $key => $value){
+               
+                if(isset($value['type']) && ($value['type'] == "select")){
+                  foreach($this->inputs[$key]['values'] as $values_key => $values_def){
+                   // print_r($values_def);die;
+                      $this->inputs[$key]['values'][$values_key] = $values_def->{session()->get('current_locale')};
+                  }
+                }
+             }
+           }
+        }
+     
+
         $this->form_builder();
         if (auth('stores')->check() && $this->name == 'stores') {
             abort('404');
         }
         $this->method = 'post';
         $this->action = route("admin." . $this->name . ".store");
+          
+
         return view('Common::admin.form', get_object_vars($this));
     }
 

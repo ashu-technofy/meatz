@@ -1,5 +1,5 @@
 @extends('Common::layout')
 
 @section('page')
-    <h3>copons Single</h3>
+    <h3>coupons Single</h3>
 @stop

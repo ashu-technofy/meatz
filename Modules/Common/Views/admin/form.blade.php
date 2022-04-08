@@ -155,13 +155,17 @@
 
         $(document).on('change', '#category', function(){
           var catId = $(this).val();
-          $.ajax({
-                url:"/admin/sub-categories/"+catId,
-                type:'GET',
-                success: function(responceData){
-                    $("#sub-cat").html(responceData);
-                }
-            });
+            if(catId){
+              $.ajax({
+                    url:"/admin/sub-categories/"+catId,
+                    type:'GET',
+                    success: function(responceData){
+                        $("#sub-cat").html(responceData);
+                    }
+                });
+            }else{
+                $("#sub-cat").html('');
+            }
         });
     </script>
 @stop

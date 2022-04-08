@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Modules\Common\Controllers\HelperController;
 use Modules\Stores\Models\Store;
 use Modules\Stores\Models\StoreCategory;
+use Modules\Stores\Models\StoreSubcategory;
 use DB;
 use Carbon\Carbon;
 
@@ -13,28 +14,52 @@ class SubcategoryController extends HelperController
 {
     public function __construct()
     {
-        $this->model = new StoreCategory();
-        if (request('store_id')) {
-            $this->rows = StoreCategory::where('store_id', request('store_id'))->select();
+
+        $current_locale = app()->getLocale();
+       /* $this->middleware(function ($request, $next){
+            $this->current_locale = session('current_locale');
+            return $next($request);
+         });*/
+
+        $this->model = new StoreSubcategory();
+
+        if (request('category_id')) {
+            $this->rows = StoreSubcategory::where('category_id', request('category_id'));
         }
+
         $this->title = "Subcategories";
         $this->name = 'subcategories';
-        $this->list = ['category name' => 'اسم التصنيف','Subcategory name' => 'اسم الفئة الفرعية'];
-
+        $this->list = ['category_title' => 'اسم التصنيف','subcategory_title' => 'اسم الفئة الفرعية'];
+        $rows = StoreCategory::get();
+        $sub_categories = [];
+     
+        foreach ($rows as $row) {
+            $sub_categories[$row->id] = $row->name;
+        }
         $this->lang_inputs = [
-            'name' => ['title' => 'الاسم'],
+            'subcategory_name' => ['title' => 'اسم الفئة الفرعية'],
         ];
-
-        
         $this->inputs = [
+            'category_id' => ['title' => 'اسم التصنيف', 'type' => 'select','values'=> $sub_categories],
             'sort' => ['title' => 'الترتيب', 'type' => 'number'],
-            'image' => ['title' => 'الصورة', 'type' => 'image'],
+            'subcategory_image' => ['title' => 'الصورة', 'type' => 'image'],
         ];
         $this->can_add = true;
-        $this->queries = ['store_id' => request('store_id')];
+        $this->queries = ['category_id' => request('category_id')];
     }
 
+    public function getSubcategories(Request $request,$category_id){
 
+        $rows = StoreSubcategory::whereIn('category_id',explode(',',$category_id))->get();
+
+        $options = "";
+        foreach($rows as $rows_key => $rows_value){
+
+            $options .= "<option value='".$rows_value->id."'>".$rows_value->subcategory_title."</option>";   
+        }
+        return $options;
+
+    }
     
     // protected function store(Request $request)
     // {

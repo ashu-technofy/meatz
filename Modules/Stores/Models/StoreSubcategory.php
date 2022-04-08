@@ -4,36 +4,42 @@ namespace Modules\Stores\Models;
 
 use Modules\Common\Models\HelperModel;
 
-class StoreSubcategory extends Model
+class StoreSubcategory extends HelperModel
 {
 
 	protected $table = "subcategories";
 
     protected $fillable = [
-        "name",
-        "model",
-        'model_id',
-        'image'
+        "subcategory_name", 
+        "subcategory_image",
+        "category_id"
     ];
 
+
     protected $casts = [
-        'name' => 'array',
+        'subcategory_name' => 'array',
     ];
 
     protected $hidden = [
-        'store_id',
+        'category_id',
         'sort',
         'created_at',
         'updated_at'
     ];
 
-    public function store()
+    public function category()
     {
-        return $this->belongsTo(Store::class);
+        return $this->belongsTo(StoreCategory::class,'category_id');
     }
 
-    public function meals()
-    {
-        return $this->hasMany(StoreProduct::class , 'category_id')->with('options');
+    public function getCategoryTitleAttribute(){
+      
+        return $this->category->name->{app()->getLocale()} ?? "";
     }
+    public function getSubcategoryTitleAttribute(){
+      
+        return $this->subcategory_name[app()->getLocale()];
+        
+    }
+
 }

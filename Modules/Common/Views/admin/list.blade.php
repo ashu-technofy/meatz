@@ -52,7 +52,7 @@
                             @endphp
                             @if(in_array($key , ['image' , 'path']))
                             <td class="visible"><img src="{{ $value }}" /></td>
-                            @elseif(strpos($key , '_') !== false && $row->{$relation[0]})
+                            
                             @if(is_object($row->{$relation[0]}) && $relation[1] == 'count')
                             <td class="visible">{{ $row->{$relation[0]}->count() }}</td>
                             @else

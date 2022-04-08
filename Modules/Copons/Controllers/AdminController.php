@@ -10,14 +10,14 @@ class AdminController extends HelperController
     public function __construct()
     {
         $this->model = new Copon();
-        $this->title = 'Copons';
+        $this->title = 'Coupon';
         $this->name =  'copons';
         $this->list = ['code' => 'الكود', 'using' => 'مرات الاستخدام', 'ended_at' => 'تاريخ الانتهاء'];
 
         $values = ['usual' => 'قيمة', 'precentage' => 'نسبة مئوية'];
         $this->inputs = [
             'code'  =>  ['title' => 'كود الكوبون'],
-            'type'  =>  ['title' => 'النوع', 'type' => 'select', 'values' => $values],
+            'type'  =>  ['title' => 'النوع', 'type' => 'select', 'values' => $values,'id'=>'coupon_type'],
             'discount'  =>  ['title' => 'الخصم', 'type' => 'number'],
             'max_discount'  =>  ['title' => 'أقصى قيمة خصم', 'type' => 'number', 'empty' => 1],
             'ended_at'  =>  ['title' => 'تاريخ الانتهاء', 'type' => 'date']

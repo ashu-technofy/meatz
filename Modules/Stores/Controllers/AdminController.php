@@ -7,6 +7,7 @@ use Modules\Areas\Models\Area;
 use Modules\Common\Controllers\HelperController;
 use Modules\Stores\Models\Store;
 use Modules\Stores\Models\StoreCategory;
+use Modules\Stores\Models\StoreSubcategory;
 use Modules\Stores\Models\StorePeriod;
 
 class AdminController extends HelperController
@@ -34,6 +35,7 @@ class AdminController extends HelperController
             $this->list = [
                 'name' => 'الاسم',
                 'mycategories' => 'الأقسام',
+                'mysubcategories' => 'الأقسام',
                 'products_count' => 'عدد المنتجات',
                 'my_orders_count' => 'عدد الطلبات',
             ];
@@ -96,8 +98,15 @@ class AdminController extends HelperController
         $cats = [];
         $subcat = [];
         $rows = StoreCategory::where('parent_id' ,0)->get();
+        
         // echo "<pre>"; print_r($rows1); die;
-        foreach ($rows as $row) {$cats[$row->id] = $row->name->{app()->getLocale()};}
+        foreach ($rows as $row) {
+            $cats[$row->id] = $row->name->{app()->getLocale()};
+            $sub_rows = StoreSubcategory::where('category_id',$row->id)->get();
+            foreach ($sub_rows as $sub_row) {
+            $subcat[$sub_row->id] = $sub_row->subcategory_title;
+            }
+        }
 
         $this->inputs = array_merge($this->inputs, [
             'email' => ['title' => 'البريد الإلكترونى', 'type' => 'email', 'id' =>'email'],
@@ -129,6 +138,9 @@ class AdminController extends HelperController
         $data['status'] = 1;
         $model = $this->model->create($data);
         $model->categories()->sync($request->categories);
+
+
+
         $model->insertSubCategory($request->subcategories, $request->categories, $model->id);
 
         if ($images = request('images')) {
@@ -157,6 +169,7 @@ class AdminController extends HelperController
         }
         $this->model->update($data);
         $this->model->categories()->sync($request->categories);
+
         $this->model->insertSubCategory($request->subcategories, $request->categories, $id, 'update');
         if ($images = request('images')) {
             foreach ($images as $image) {

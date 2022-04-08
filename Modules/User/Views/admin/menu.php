@@ -5,7 +5,6 @@ $menu['User*'] = [
         'link'  =>  'users.index',
         'icon'  =>  'fas fa-users'
     ],
-
     [
         'title' =>  __("Roles"),
         'link'  =>  'roles.index',
