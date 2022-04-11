@@ -7,9 +7,16 @@
             <div class="card-header">
                 <h3 class="card-title">{{ __($title) }}</h3>
                 @if($can_add)
-                <a href="{{ route("admin.$name.create" , request()->query()) }}" class="mlink btn btn-success"><i
+                   @if(auth('stores')->check())
+                   <a href="{{ route("$name.create" , request()->query()) }}" class="mlink btn btn-success"><i
                         class="fa fa-plus"></i>
                     <span>{{ __("Add new") }}</span></a>
+                   @else
+                   <a href="{{ route("admin.$name.create" , request()->query()) }}" class="mlink btn btn-success"><i
+                        class="fa fa-plus"></i>
+                    <span>{{ __("Add new") }}</span></a>
+                   @endif
+                
                 @endif
             </div>
             <!-- /.card-header -->
@@ -89,13 +96,32 @@
                             @endforeach
                             @endif
                             <td>
-
-                                <a class="btn btn-primary mlink" href="{{ route("admin.$name.edit" , array_merge([$row->id] , request()->query())) }}">
+                                @if(auth('stores')->check())
+                                 <a class="btn btn-primary mlink" href="{{ route("$name.edit" , array_merge([$row->id] , request()->query())) }}">
                                     <i class="fa fa-edit"></i>
                                 </a>
+                                @else
+                                 <a class="btn btn-primary mlink" href="{{ route("admin.$name.edit" , array_merge([$row->id] , request()->query())) }}">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                                @endif
+                               
                             </td>
                             @if($can_delete)
                             <td>
+                                 @if(auth('stores')->check())
+                                 <form action="{{ route("$name.destroy" , $row->id) }}" method="post"
+                                    class="action_form remove">
+                                    @csrf
+                                    {{ method_field('delete') }}
+                                    @foreach(request()->query() as $key => $val)
+                                        <input type="hidden" name="{{ $key }}" value="{{ $val }}">
+                                    @endforeach
+                                    <button type="submit" class="btn btn-danger removethis">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+                                </form>
+                                 @else
                                 <form action="{{ route("admin.$name.destroy" , $row->id) }}" method="post"
                                     class="action_form remove">
                                     @csrf
@@ -107,6 +133,7 @@
                                         <i class="fa fa-trash"></i>
                                     </button>
                                 </form>
+                                @endif
                             </td>
                             @endif
                         </tr>

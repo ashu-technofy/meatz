@@ -12,6 +12,7 @@ use Modules\Common\Models\HelperModel;
 use Modules\Orders\Models\Cart;
 use Modules\Orders\Models\Guest;
 use Modules\Orders\Models\Order;
+use Modules\Copons\Models\Copon;
 use Modules\Stores\Resources\MenuResource;
 use DB;
 
@@ -104,6 +105,11 @@ class Store extends HelperModel implements AuthenticatableContract
     {
         return $this->belongsToMany(StoreCategory::class , 'store_categories' , 'store_id' , 'category_id');
     }
+    
+    public function copons()
+    {
+        return $this->belongsToMany(Copon::class,'store_copons','store_id','copon_id');
+    }
 
     public function subcategories()
     {
@@ -145,6 +151,10 @@ class Store extends HelperModel implements AuthenticatableContract
             $strs[] = $cat->name->{app()->getLocale()};
         }
         return implode(',',$strs);
+    }
+
+     public function getStoreNameAttribute(){
+        return $this->name->{app()->getLocale()};
     }
 
     public function getMysubcategoriesAttribute(){

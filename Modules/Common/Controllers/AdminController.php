@@ -188,13 +188,13 @@ class AdminController extends Controller
             //     'icon' => 'fa-map-marker',
             //     'type' => 'red',
             // ],
-            // [
-            //     'title' => __("Categories"),
-            //     'url' => route('admin.categories.index', ['store_id' => $store->id]),
-            //     'count' => $store->categories()->count(),
-            //     'icon' => 'fa-th-large',
-            //     'type' => 'red',
-            // ],
+            [
+                 'title' => __("Coupons"),
+                 'url' => route('copons.index', ['store_id' => $store->id]),
+                 'count' => $store->copons()->count(),
+                 'icon' => 'fa-th-large',
+                 'type' => 'red',
+            ],
             [
                 'title' => __("Options"),
                 'url' => route('admin.options.index', ['store_id' => $store->id]),

@@ -1,3 +1,2 @@
 <?php
-
-Route::resource('copons', 'SiteController');
+Route::resource('copons' , 'CoponController');

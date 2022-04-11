@@ -7,9 +7,16 @@
             <div class="card-header">
                 <h3 class="card-title"><?php echo e(__($title)); ?></h3>
                 <?php if($can_add): ?>
-                <a href="<?php echo e(route("admin.$name.create" , request()->query())); ?>" class="mlink btn btn-success"><i
+                   <?php if(auth('stores')->check()): ?>
+                   <a href="<?php echo e(route("$name.create" , request()->query())); ?>" class="mlink btn btn-success"><i
                         class="fa fa-plus"></i>
                     <span><?php echo e(__("Add new")); ?></span></a>
+                   <?php else: ?>
+                   <a href="<?php echo e(route("admin.$name.create" , request()->query())); ?>" class="mlink btn btn-success"><i
+                        class="fa fa-plus"></i>
+                    <span><?php echo e(__("Add new")); ?></span></a>
+                   <?php endif; ?>
+                
                 <?php endif; ?>
             </div>
             <!-- /.card-header -->
@@ -90,13 +97,33 @@
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             <?php endif; ?>
                             <td>
-
-                                <a class="btn btn-primary mlink" href="<?php echo e(route("admin.$name.edit" , array_merge([$row->id] , request()->query()))); ?>">
+                                <?php if(auth('stores')->check()): ?>
+                                 <a class="btn btn-primary mlink" href="<?php echo e(route("$name.edit" , array_merge([$row->id] , request()->query()))); ?>">
                                     <i class="fa fa-edit"></i>
                                 </a>
+                                <?php else: ?>
+                                 <a class="btn btn-primary mlink" href="<?php echo e(route("admin.$name.edit" , array_merge([$row->id] , request()->query()))); ?>">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                                <?php endif; ?>
+                               
                             </td>
                             <?php if($can_delete): ?>
                             <td>
+                                 <?php if(auth('stores')->check()): ?>
+                                 <form action="<?php echo e(route("$name.destroy" , $row->id)); ?>" method="post"
+                                    class="action_form remove">
+                                    <?php echo csrf_field(); ?>
+                                    <?php echo e(method_field('delete')); ?>
+
+                                    <?php $__currentLoopData = request()->query(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $val): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                        <input type="hidden" name="<?php echo e($key); ?>" value="<?php echo e($val); ?>">
+                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                    <button type="submit" class="btn btn-danger removethis">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+                                </form>
+                                 <?php else: ?>
                                 <form action="<?php echo e(route("admin.$name.destroy" , $row->id)); ?>" method="post"
                                     class="action_form remove">
                                     <?php echo csrf_field(); ?>
@@ -109,6 +136,7 @@
                                         <i class="fa fa-trash"></i>
                                     </button>
                                 </form>
+                                <?php endif; ?>
                             </td>
                             <?php endif; ?>
                         </tr>

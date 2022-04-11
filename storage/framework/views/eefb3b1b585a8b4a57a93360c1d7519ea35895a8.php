@@ -12,7 +12,6 @@
                 <p><?php echo e(auth()->user()->username ?? auth()->user()->name ?? 'Admin'); ?></p>
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
-            <!-- search form -->
             <form action="#" method="get" class="sidebar-form">
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="Search...">
@@ -23,9 +22,7 @@
                     </span>
                 </div>
             </form>
-            <!-- /.search form -->
         </div>
-
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
             <li class="treeview">
@@ -36,6 +33,7 @@
             </li>
        
             <?php $__currentLoopData = sidebar(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $role => $group): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+           
             <?php if(isset($group['link'])): ?>
             <li class="treeview">
                 <a class="mlink" href="<?php echo e(route("admin.".$group['link'])); ?>">

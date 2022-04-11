@@ -75,30 +75,32 @@ class HelperController extends Controller
 
     public function create()
     {
-        
+
         if($this->name == 'subcategories'){
            if(count($this->inputs)){
             foreach($this->inputs as $key => $value){
                
                 if(isset($value['type']) && ($value['type'] == "select")){
                   foreach($this->inputs[$key]['values'] as $values_key => $values_def){
-                   // print_r($values_def);die;
+                  
                       $this->inputs[$key]['values'][$values_key] = $values_def->{session()->get('current_locale')};
                   }
                 }
              }
            }
         }
-     
 
         $this->form_builder();
         if (auth('stores')->check() && $this->name == 'stores') {
             abort('404');
         }
         $this->method = 'post';
+        if(auth('stores')->check()){
+        $this->action = route($this->name . ".store");
+        }else{
         $this->action = route("admin." . $this->name . ".store");
-          
-
+        }
+       
         return view('Common::admin.form', get_object_vars($this));
     }
 
@@ -129,7 +131,11 @@ class HelperController extends Controller
         }
         $this->model = $this->model->findOrFail($id);
         $this->method = 'put';
+        if(auth('stores')->check()){
+         $this->action = route( $this->name . ".update", $id);
+        }else{
         $this->action = route("admin." . $this->name . ".update", $id);
+        }
         return view('Common::admin.form', get_object_vars($this) ,['id'=>$id]);
     }
 
@@ -153,7 +159,12 @@ class HelperController extends Controller
         foreach ($this->more_actions as $action) {
             $this->{$action}($this->model);
         }
+        if(auth('stores')->check()){
+        return response()->json(['url' => route( $this->name . '.index', $this->queries), 'message' => __("Info saved successfully")]);
+         
+        }else{
         return response()->json(['url' => route('admin.' . $this->name . '.index', $this->queries), 'message' => __("Info saved successfully")]);
+        }
     }
 
     public function destroy($id)
