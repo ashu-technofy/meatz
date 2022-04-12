@@ -21,6 +21,24 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body table-responsive">
+                <?php
+                    $route = Route::current()->getName();
+                ?>
+                @if(!auth('stores')->check() && $route == "admin.products.index")
+                <div class="search-box" style="
+                    width: 100%;
+                    max-width: 300px;
+                    margin: auto;">
+                    <div class="form-group">
+                        <select name="status" class="form-control" id="">                            
+                            <option value="status" selected disabled>@lang('Status')</</option>
+                            <option value="1" {{ !empty(request('status')) && request('status') == 1 ? 'selected' : '' }}>@lang('APPROVED')</option>
+                            <option value="0" {{ !empty(request('status')) && request('status') == 0 ? 'selected' : '' }}>@lang('UNAPPROVED')</option>
+                        </select>
+                        
+                    </div>
+                </div>
+                @endif
                 <table id="example2" class="table table-bordered table-striped table-hover">
                     <thead>
                         <tr>
@@ -195,6 +213,11 @@
                 },
             },
         ]
+    });
+
+    $("[name='status']").change(function(){
+        console.log($(this).val());
+        add_query($(this).val(), 'status');
     });
 
 </script>
