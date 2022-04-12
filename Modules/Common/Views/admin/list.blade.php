@@ -106,7 +106,7 @@
                             <td>
                                 <label class="switch">
                                     <input type="checkbox" {{ $row->$title ? 'checked' : '' }} class="change_status"
-                                        value="{{ $row->id }}" data-route="{{ $option['url'] }}">
+                                        value="{{ $row->id }}" data-route="{{ $option['url'] }}" {{ (auth('stores')->check() && $route == "admin.products.index") ? 'disabled' : ''}}>
                                     <span class="slider round"></span>
                                 </label>
                             </td>
@@ -216,7 +216,6 @@
     });
 
     $("[name='status']").change(function(){
-        console.log($(this).val());
         add_query($(this).val(), 'status');
     });
 
