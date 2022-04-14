@@ -41,7 +41,6 @@ class AdminController extends HelperController
                 'code'  =>  ['title' => 'كود الكوبون'],
                 'type'  =>  ['title' => 'النوع', 'type' => 'select', 'values' => $values,'id'=>'coupon_type'],
                 'discount'  =>  ['title' => 'الخصم', 'type' => 'number'],
-               
                 'max_discount'  =>  ['title' => 'أقصى قيمة خصم', 'type' => 'number', 'empty' => 1],
                 'ended_at'  =>  ['title' => 'تاريخ الانتهاء', 'type' => 'date']
         ];

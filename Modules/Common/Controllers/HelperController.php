@@ -95,7 +95,7 @@ class HelperController extends Controller
             abort('404');
         }
         $this->method = 'post';
-        if(auth('stores')->check()){
+        if(auth('stores')->check() && $this->name == 'copons'){
         $this->action = route($this->name . ".store");
         }else{
         $this->action = route("admin." . $this->name . ".store");
@@ -131,7 +131,7 @@ class HelperController extends Controller
         }
         $this->model = $this->model->findOrFail($id);
         $this->method = 'put';
-        if(auth('stores')->check()){
+        if(auth('stores')->check() && $this->name == 'copons'){
          $this->action = route( $this->name . ".update", $id);
         }else{
         $this->action = route("admin." . $this->name . ".update", $id);
@@ -159,7 +159,7 @@ class HelperController extends Controller
         foreach ($this->more_actions as $action) {
             $this->{$action}($this->model);
         }
-        if(auth('stores')->check()){
+        if(auth('stores')->check() && $this->name == 'copons'){
         return response()->json(['url' => route( $this->name . '.index', $this->queries), 'message' => __("Info saved successfully")]);
          
         }else{
@@ -175,6 +175,10 @@ class HelperController extends Controller
 
         $this->model->findOrFail($id)->delete();
         $this->queries = array_merge($this->queries , request()->except(['_token' , '_method']));
-        return response()->json(['url' => route('admin.' . $this->name . '.index', $this->queries), 'message' => __("Deleted successfully")]);
+        if(auth('stores')->check() && $this->name == 'copons'){
+           return response()->json(['url' => route($this->name . '.index', $this->queries), 'message' => __("Deleted successfully")]);
+        }else{
+          return response()->json(['url' => route('admin.' . $this->name . '.index', $this->queries), 'message' => __("Deleted successfully")]);
+        }
     }
 }

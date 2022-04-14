@@ -7,7 +7,7 @@
             <div class="card-header">
                 <h3 class="card-title"><?php echo e(__($title)); ?></h3>
                 <?php if($can_add): ?>
-                   <?php if(auth('stores')->check()): ?>
+                   <?php if(auth('stores')->check() && ($title == 'Coupon')): ?>
                    <a href="<?php echo e(route("$name.create" , request()->query())); ?>" class="mlink btn btn-success"><i
                         class="fa fa-plus"></i>
                     <span><?php echo e(__("Add new")); ?></span></a>
@@ -21,6 +21,24 @@
             </div>
             <!-- /.card-header -->
             <div class="card-body table-responsive">
+                <?php
+                    $route = Route::current()->getName();
+                ?>
+                <?php if(!auth('stores')->check() && $route == "admin.products.index"): ?>
+                <div class="search-box" style="
+                    width: 100%;
+                    max-width: 300px;
+                    margin: auto;">
+                    <div class="form-group">
+                        <select name="status" class="form-control" id="">                            
+                            <option value="status" selected disabled><?php echo app('translator')->get('Status'); ?></</option>
+                            <option value="1" <?php echo e(!empty(request('approve_status')) && request('approve_status') == 1 ? 'selected' : ''); ?>><?php echo app('translator')->get('APPROVED'); ?></option>
+                            <option value="0" <?php echo e(!empty(request('approve_status')) && request('approve_status') == 0 ? 'selected' : ''); ?>><?php echo app('translator')->get('UNAPPROVED'); ?></option>
+                        </select>
+                        
+                    </div>
+                </div>
+                <?php endif; ?>
                 <table id="example2" class="table table-bordered table-striped table-hover">
                     <thead>
                         <tr>
@@ -89,7 +107,7 @@
                             <td>
                                 <label class="switch">
                                     <input type="checkbox" <?php echo e($row->$title ? 'checked' : ''); ?> class="change_status"
-                                        value="<?php echo e($row->id); ?>" data-route="<?php echo e($option['url']); ?>">
+                                        value="<?php echo e($row->id); ?>" data-route="<?php echo e($option['url']); ?>" <?php echo e((auth('stores')->check() && $route == "admin.products.index") ? 'disabled' : ''); ?>>
                                     <span class="slider round"></span>
                                 </label>
                             </td>
@@ -97,7 +115,7 @@
                             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             <?php endif; ?>
                             <td>
-                                <?php if(auth('stores')->check()): ?>
+                                <?php if(auth('stores')->check() && ($name == 'copons')): ?>
                                  <a class="btn btn-primary mlink" href="<?php echo e(route("$name.edit" , array_merge([$row->id] , request()->query()))); ?>">
                                     <i class="fa fa-edit"></i>
                                 </a>
@@ -110,7 +128,7 @@
                             </td>
                             <?php if($can_delete): ?>
                             <td>
-                                 <?php if(auth('stores')->check()): ?>
+                                 <?php if(auth('stores')->check() && ($name == 'copons')): ?>
                                  <form action="<?php echo e(route("$name.destroy" , $row->id)); ?>" method="post"
                                     class="action_form remove">
                                     <?php echo csrf_field(); ?>
@@ -201,6 +219,17 @@
         ]
     });
 
+    $("[name='status']").change(function(){
+        var current_url = window.location.href;
+        var modified_url = current_url.replace(/approve_status=1/g,'');
+        modified_url = modified_url.replace(/approve_status=0/g,'');
+        if(modified_url.indexOf("?") > 1){
+            window.location.href = modified_url+"approve_status="+$(this).val();
+        }else{
+            window.location.href = modified_url+"?approve_status="+$(this).val();
+        }
+       // add_query($(this).val(), 'approve_status');
+    });
 </script>
 
 <?php $__env->stopSection(); ?>

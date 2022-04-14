@@ -19,5 +19,6 @@ Route::resource('subcategories', 'SubcategoryController');
 Route::resource('options', 'OptionsController');
 Route::get('remove_product_option', 'ProductController@remove_option')->name('remove_product_option');
 Route::get('productstatus', 'ProductController@status')->name('products.status');
+Route::get('approveproductstatus', 'ProductController@approvestatus')->name('products.approve_status');
 
 Route::get('store_status', 'AdminController@status')->name('stores.status');

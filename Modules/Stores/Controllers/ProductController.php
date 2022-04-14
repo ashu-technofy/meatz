@@ -19,7 +19,7 @@ class ProductController extends HelperController
         } elseif (request('type') == 'special_box') {
             $this->rows = StoreProduct::where('type', 'special_box');
         } else {
-            $this->rows = StoreProduct::whereNull('store_id');
+            $this->rows = StoreProduct::query();
         }
         switch (request('type')) {
             case 'box':
@@ -44,7 +44,7 @@ class ProductController extends HelperController
         $this->queries = ['store_id' => request('store_id')];
         $this->more_actions = ['product_options'];
 
-        $this->switches['status'] = ['url' => route("admin.products.status")];
+        
         $type = request('type');
         if (in_array($type, ['box', 'special_box'])) {
             $this->list['original_price'] = 'السعر قبل الخصم';
@@ -53,6 +53,16 @@ class ProductController extends HelperController
                 $this->queries = ['type' => 'special_box'];
             }
         }
+    }
+    
+
+    protected function list_builder()
+    {
+        $this->switches['status'] = ['url' => route("admin.products.status")];
+        if(!auth('stores')->check()){
+            $this->switches['approve_status'] = ['url' => route("admin.products.approve_status")];
+        }
+
     }
 
     protected function form_builder()
@@ -139,5 +149,15 @@ class ProductController extends HelperController
         $item->update(['status' => $status]);
         return 'success';
     }
+
+    public function approvestatus()
+    {
+        $item = StoreProduct::findOrFail(request('id'));
+        $status = $item->approve_status ? 0 : 1;
+        $item->update(['approve_status' => $status]);
+        return 'success';
+    }
+
+    
 
 }

@@ -15,6 +15,7 @@ class StoreProduct extends HelperModel
 
     protected $fillable = [
         'status',
+        "approve_status",
         "name",
         "content",
         "price",

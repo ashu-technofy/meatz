@@ -7,7 +7,7 @@
             <div class="card-header">
                 <h3 class="card-title">{{ __($title) }}</h3>
                 @if($can_add)
-                   @if(auth('stores')->check())
+                   @if(auth('stores')->check() && ($title == 'Coupon'))
                    <a href="{{ route("$name.create" , request()->query()) }}" class="mlink btn btn-success"><i
                         class="fa fa-plus"></i>
                     <span>{{ __("Add new") }}</span></a>
@@ -32,8 +32,8 @@
                     <div class="form-group">
                         <select name="status" class="form-control" id="">                            
                             <option value="status" selected disabled>@lang('Status')</</option>
-                            <option value="1" {{ !empty(request('status')) && request('status') == 1 ? 'selected' : '' }}>@lang('APPROVED')</option>
-                            <option value="0" {{ !empty(request('status')) && request('status') == 0 ? 'selected' : '' }}>@lang('UNAPPROVED')</option>
+                            <option value="1" {{ !empty(request('approve_status')) && request('approve_status') == 1 ? 'selected' : '' }}>@lang('APPROVED')</option>
+                            <option value="0" {{ !empty(request('approve_status')) && request('approve_status') == 0 ? 'selected' : '' }}>@lang('UNAPPROVED')</option>
                         </select>
                         
                     </div>
@@ -114,7 +114,7 @@
                             @endforeach
                             @endif
                             <td>
-                                @if(auth('stores')->check())
+                                @if(auth('stores')->check() && ($name == 'copons'))
                                  <a class="btn btn-primary mlink" href="{{ route("$name.edit" , array_merge([$row->id] , request()->query())) }}">
                                     <i class="fa fa-edit"></i>
                                 </a>
@@ -127,7 +127,7 @@
                             </td>
                             @if($can_delete)
                             <td>
-                                 @if(auth('stores')->check())
+                                 @if(auth('stores')->check() && ($name == 'copons'))
                                  <form action="{{ route("$name.destroy" , $row->id) }}" method="post"
                                     class="action_form remove">
                                     @csrf
@@ -216,9 +216,16 @@
     });
 
     $("[name='status']").change(function(){
-        add_query($(this).val(), 'status');
+        var current_url = window.location.href;
+        var modified_url = current_url.replace(/approve_status=1/g,'');
+        modified_url = modified_url.replace(/approve_status=0/g,'');
+        if(modified_url.indexOf("?") > 1){
+            window.location.href = modified_url+"approve_status="+$(this).val();
+        }else{
+            window.location.href = modified_url+"?approve_status="+$(this).val();
+        }
+       // add_query($(this).val(), 'approve_status');
     });
-
 </script>
 
 @stop
