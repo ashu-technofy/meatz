@@ -498,3 +498,26 @@ function get_supplier_arr($order, $refund = false)
     }
     return $suppliers;
 }
+
+function isMobileDevice() {
+
+        $aMobileUA = array(
+            '/iphone/i' => 'iPhone',
+            '/ipod/i' => 'iPod',
+            '/ipad/i' => 'iPad',
+            '/android/i' => 'Android',
+            '/blackberry/i' => 'BlackBerry',
+            '/webos/i' => 'Mobile'
+        );
+        
+        foreach ($aMobileUA as $sMobileKey => $sMobileOS) {
+
+            if (preg_match($sMobileKey, $_SERVER['HTTP_USER_AGENT'])) {
+
+                return $sMobileOS;
+
+            }
+        }
+
+        return false;
+}

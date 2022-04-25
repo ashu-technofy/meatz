@@ -24,14 +24,18 @@ class Admin
                 $roles[] = $module;
             }
         }
+      
         $user = auth()->user();
         if(!$user){
             auth()->attempt(['email' => session('admin_mail') , 'password' => session('admin_pass')]);
         }
-        if (auth('stores')->check() && in_array($role, ['Orders', 'Products', 'Stores', 'Common'])) {
+       
+      
+        if (auth('stores')->check() && in_array($role, ['Orders', 'Products', 'Stores', 'Common','Master'])) {
             return $next($request);
         } elseif (auth()->check() && auth()->user()->role) {
             $route_name = Route::currentRouteName();
+
             if (in_array($route_name, ['admin.home', 'admin.load'])) return $next($request);
             $user = auth()->user();
             if ($user && $user->role_id && in_array($role, $user->role->roles)) {

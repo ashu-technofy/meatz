@@ -8,6 +8,7 @@ use Modules\Stores\Models\Store;
 use Modules\Stores\Models\StoreCategory;
 use Modules\Stores\Models\StoreOption;
 use Modules\Stores\Models\StoreProduct;
+use Modules\Master\Models\ProductOptions;
 
 class ProductController extends HelperController
 {
@@ -40,12 +41,22 @@ class ProductController extends HelperController
             'price' => 'السعر',
             'store_name' => 'المتجر'
         ];
-
+        if($this->title == 'Products'){
+           $this->links = [
+                [
+                    'title' => 'Option Group',
+                    'type' => 'warning',
+                    'key' => 'product_id',
+                    'url' => 'admin.product_options.index',
+                    'icon' => 'fa-th-list',
+                ]
+            ];
+        }
         $this->queries = ['store_id' => request('store_id')];
         $this->more_actions = ['product_options'];
 
-        
         $type = request('type');
+
         if (in_array($type, ['box', 'special_box'])) {
             $this->list['original_price'] = 'السعر قبل الخصم';
             $this->list['persons'] = 'عدد الأشخاص';

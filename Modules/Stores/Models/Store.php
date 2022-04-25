@@ -13,6 +13,7 @@ use Modules\Orders\Models\Cart;
 use Modules\Orders\Models\Guest;
 use Modules\Orders\Models\Order;
 use Modules\Copons\Models\Copon;
+use Modules\Stores\Models\StoreBranches;
 use Modules\Stores\Resources\MenuResource;
 use DB;
 
@@ -104,6 +105,11 @@ class Store extends HelperModel implements AuthenticatableContract
     public function categories()
     {
         return $this->belongsToMany(StoreCategory::class , 'store_categories' , 'store_id' , 'category_id');
+    }
+
+    public function branches()
+    {
+        return $this->hasMany(StoreBranches::class,'store_id') ;
     }
     
     public function copons()

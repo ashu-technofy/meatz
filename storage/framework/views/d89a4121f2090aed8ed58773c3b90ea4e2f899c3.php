@@ -6,9 +6,15 @@
             <div class="info-box">
                 <span class="info-box-icon bg-<?php echo e($box['type']); ?>"><i class="fa <?php echo e($box['icon']); ?>"></i></span>
 
-                <div class="info-box-content">
-                    <span class="info-box-number"><?php echo e($box['count']); ?><small></small></span>
-                    <span class="info-box-text"><?php echo e($box['title']); ?></span>
+               <div class="info-box-content">
+                    <span class="info-box-number"><?php echo e($box['count']); ?>
+
+                    <?php if(!empty($box['activecount'])): ?>
+                    <small class="badge badge-danger" style="border-radius:50%;"><?php echo e($box['activecount']); ?></small>
+                    <?php endif; ?>
+                    </span>
+                    <span class="info-box-text"><?php echo e($box['title']); ?> 
+                    </span>
                 </div>
                 <!-- /.info-box-content -->
             </div>

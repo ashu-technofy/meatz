@@ -49,6 +49,13 @@ class AdminController extends HelperController
                     'url' => 'admin.orders.index',
                     'icon' => 'fa-th-list',
                 ],
+                [
+                    'title' => 'Branches',
+                    'type' => 'primary',
+                    'key' => 'store_id',
+                    'url' => 'admin.branches.index',
+                    'icon' => 'fa-th-list',
+                ],
                 // [
                 //     'title' => 'Areas',
                 //     'type' => 'primary',

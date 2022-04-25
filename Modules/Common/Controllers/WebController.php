@@ -1,7 +1,7 @@
 <?php
 
 namespace Modules\Common\Controllers;
-
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Modules\Common\Models\Section;
 use Modules\Common\Models\Setting;
@@ -24,5 +24,24 @@ class WebController extends Controller
         $page = Page::where('type', 'policy')->first() ?? new Page;
         $socials = Setting::socials()->get();
         return view('Common::policy', get_defined_vars());
+    }
+
+    public function redirectDeepLink(Request $request,$product_id) {
+       
+            $device = isMobileDevice();
+           
+            $app = config('constant.DEEPLINKING.APP');
+
+            $data = array();
+            if ($device == 'iPhone') {
+                $data['primaryRedirection'] = $app;
+                $data['secndaryRedirection'] = config('constant.DEEPLINKING.APPSTORE');
+                $data['product_id'] = $product_id;
+            } else {
+                $redirect = config('constant.DEEPLINKING.WEBSITE');
+                return redirect($redirect);
+            }
+            return view('home', $data);
+       
     }
 }

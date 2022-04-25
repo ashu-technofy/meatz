@@ -79,6 +79,7 @@ class AdminController extends Controller
             // ],
             [
                 'title' => __("Products"),
+                'activecount' => StoreProduct::where('approve_status', 0)->count(),
                 'url' => route('admin.products.index'),
                 'count' => StoreProduct::count(),
                 'icon' => 'fa-th-large',
@@ -181,13 +182,13 @@ class AdminController extends Controller
                 'icon' => 'fas fa-th-large',
                 'type' => 'purple',
             ],
-            // [
-            //     'title' => __("Areas"),
-            //     'url' => route('admin.store_areas', ['store_id' => $store->id]),
-            //     'count' => $store->areas()->count(),
-            //     'icon' => 'fa-map-marker',
-            //     'type' => 'red',
-            // ],
+            [
+                'title' => __("Branches"),
+                'url' => route('admin.branches.index', ['store_id' => $store->id]),
+                'count' => $store->branches()->count(),
+                'icon' => 'fa-map-marker',
+                'type' => 'red',
+            ],
             [
                  'title' => __("Coupons"),
                  'url' => route('copons.index', ['store_id' => $store->id]),

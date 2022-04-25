@@ -28,9 +28,9 @@ class AuthController extends Controller
             'user' => $user
         ];
         try {
-            Mail::send("User::emails.default", $data, function ($mail) use ($user, $subject) {
-                $mail->to($user->email, $user->username);
-                $mail->subject($subject);
+          //  Mail::send("User::emails.default", $data, function ($mail) use ($user, $subject) {
+            //    $mail->to($user->email, $user->username);
+               // $mail->subject($subject);
             });
         }catch(\Throwable $e){}
         return api_response('success', __('You have successfully registered !'), new UserResource($user));

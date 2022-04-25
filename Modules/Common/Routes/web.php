@@ -2,6 +2,7 @@
 Route::get('/', 'WebController@index');
 Route::get('policy', 'WebController@policy');
 Route::get('search', 'WebController@search')->name('search');
+Route::get('product/details/{product_id?}', 'WebController@redirectDeepLink')->name('redirectDeepLink');
 
 Route::get('change_locale', function () {
 

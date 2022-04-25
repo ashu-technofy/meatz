@@ -6,9 +6,14 @@
             <div class="info-box">
                 <span class="info-box-icon bg-{{ $box['type'] }}"><i class="fa {{ $box['icon'] }}"></i></span>
 
-                <div class="info-box-content">
-                    <span class="info-box-number">{{ $box['count'] }}<small></small></span>
-                    <span class="info-box-text">{{ $box['title'] }}</span>
+               <div class="info-box-content">
+                    <span class="info-box-number">{{ $box['count'] }}
+                    @if(!empty($box['activecount']))
+                    <small class="badge badge-danger" style="border-radius:50%;">{{ $box['activecount'] }}</small>
+                    @endif
+                    </span>
+                    <span class="info-box-text">{{ $box['title'] }} 
+                    </span>
                 </div>
                 <!-- /.info-box-content -->
             </div>
